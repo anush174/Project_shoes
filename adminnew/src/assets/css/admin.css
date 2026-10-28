@@ -1,0 +1,44 @@
+/* Admin widgets */
+.text-muted-2 { color: var(--muted); }
+
+.stat-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--card); border-radius: 12px; padding: 22px;
+}
+.stat-card p { margin: 0; font-size: 13px; color: var(--muted); }
+.stat-card h4 { margin: 0; }
+.stat-icon {
+  width: 52px; height: 52px; border-radius: 14px; font-size: 20px;
+  display: flex; align-items: center; justify-content: center;
+}
+.ic-primary { background: rgba(108,99,255,.18); color: #6C63FF; }
+.ic-info    { background: rgba(56,189,248,.16); color: #38bdf8; }
+.ic-success { background: rgba(25,195,125,.16); color: #19c37d; }
+.ic-warning { background: rgba(245,158,11,.16); color: #f59e0b; }
+
+.flow-tile {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 8px; color: #fff; text-align: center; font-weight: 600; transition: border-color .2s;
+}
+.flow-tile i { font-size: 20px; color: var(--primary); }
+.flow-tile small { color: var(--muted); font-weight: 400; }
+.flow-tile:hover { border-color: var(--primary); color: #fff; }
+
+.sbadge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+.s-primary { background: rgba(108,99,255,.18); color: #8f89ff; }
+.s-info    { background: rgba(56,189,248,.16); color: #38bdf8; }
+.s-success { background: rgba(25,195,125,.16); color: #19c37d; }
+.s-warning { background: rgba(245,158,11,.16); color: #f59e0b; }
+.s-danger  { background: rgba(239,68,68,.16);  color: #ef4444; }
+
+.avatar {
+  width: 32px; height: 32px; border-radius: 50%; color: #fff; font-size: 12px; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+
+.table { --bs-table-bg: transparent; --bs-table-color: #c9cde0; --bs-table-hover-bg: rgba(255,255,255,.04); --bs-table-hover-color: #fff; border-color: var(--line); }
+.table th { color: #fff; border-color: var(--line); }
+.table td { vertical-align: middle; }
+
+@media print { .no-print { display: none !important; } }

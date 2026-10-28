@@ -1,0 +1,24 @@
+user side
+
+Registration/Login
+    
+Browse shoes
+Search & filter products
+view Products
+Select size
+Cart
+Checkout
+Payment
+Order tracking
+Reviews & ratings
+
+Admin side
+
+Admin Login
+\Manage categories
+Manage product
+Manage stock
+Manage orders
+manage payment
+Manage customers
+View sales/reports

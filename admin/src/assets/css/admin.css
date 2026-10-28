@@ -1,0 +1,93 @@
+/********** Store Admin – refreshed design layer (loads after style.css) **********/
+:root{
+  --accent:#6C63FF; --accent-2:#38bdf8;
+  --panel:#161a24; --panel-2:#1d2230; --page:#0d1017; --line:rgba(255,255,255,.07);
+  --muted:#8b92b3;
+}
+body{background:var(--page);font-family:'Open Sans',sans-serif}
+.bg-dark{background:var(--page)!important}
+.bg-secondary{background:var(--panel)!important}
+.bg-secondary.rounded,.card-panel{border:1px solid var(--line);border-radius:14px!important}
+.rounded{border-radius:14px!important}
+.text-muted-2{color:var(--muted)}
+h1,h2,h3,h4,h5,h6{font-family:'Roboto',sans-serif}
+
+/* sidebar */
+.sidebar .navbar{background:var(--panel)!important;border-right:1px solid var(--line)}
+.sidebar .navbar .navbar-nav .nav-link{border-radius:10px;margin:2px 0 2px 14px;height:44px}
+.sidebar .navbar .navbar-nav .nav-link:hover,
+.sidebar .navbar .navbar-nav .nav-link.active{
+  color:#fff;background:linear-gradient(90deg,rgba(108,99,255,.28),rgba(108,99,255,.05));
+  border-left:3px solid var(--accent)}
+.sidebar .navbar .navbar-nav .nav-link i,
+.sidebar .navbar .navbar-nav .nav-link:hover i,
+.sidebar .navbar .navbar-nav .nav-link.active i{background:transparent;color:var(--accent)}
+.nav-caption{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:18px 0 6px 28px}
+.brand-mark{display:inline-flex;width:34px;height:34px;border-radius:10px;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;font-size:15px}
+
+/* top navbar */
+.content .navbar{background:rgba(22,26,36,.85)!important;backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+
+/* buttons / inputs */
+.btn-primary{background:linear-gradient(135deg,var(--accent),#8b7dff);border:0;box-shadow:0 6px 18px rgba(108,99,255,.35)}
+.btn-primary:hover{filter:brightness(1.1)}
+.btn-outline-light{border-color:var(--line);color:#cfd3ea}
+.form-control,.form-select{background:#0f131b!important;border:1px solid var(--line)!important;color:#e5e8f5}
+.form-control:focus,.form-select:focus{border-color:var(--accent)!important;box-shadow:0 0 0 .2rem rgba(108,99,255,.2)!important}
+.form-control::placeholder{color:#5d6485}
+label.form-label{color:#aeb4d3;font-size:13px}
+
+/* stat cards */
+.stat-card{display:flex;align-items:center;gap:16px;padding:22px;border-radius:14px;background:var(--panel);
+  border:1px solid var(--line);transition:.3s;position:relative;overflow:hidden}
+.stat-card:hover{transform:translateY(-3px);border-color:rgba(108,99,255,.5)}
+.stat-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.ic-primary{background:rgba(108,99,255,.15);color:#8f89ff}
+.ic-success{background:rgba(25,195,125,.15);color:#25d38c}
+.ic-warning{background:rgba(255,193,7,.15);color:#ffc107}
+.ic-danger{background:rgba(255,77,94,.15);color:#ff6b7a}
+.ic-info{background:rgba(56,189,248,.15);color:#38bdf8}
+.stat-card p{margin:0 0 4px;color:var(--muted);font-size:13px}
+.stat-card h4{margin:0}
+
+/* tables */
+.table{--bs-table-bg:transparent;color:#d6daf0;vertical-align:middle}
+.table thead th{color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--line)!important;white-space:nowrap}
+.table td,.table th{border-color:var(--line)}
+.table-hover>tbody>tr:hover>*{--bs-table-accent-bg:rgba(108,99,255,.07);color:#fff}
+
+/* status badges */
+.sbadge{display:inline-block;padding:4px 12px;border-radius:30px;font-size:12px;font-weight:600}
+.s-success{background:rgba(25,195,125,.15);color:#25d38c}
+.s-warning{background:rgba(255,193,7,.15);color:#ffc107}
+.s-danger{background:rgba(255,77,94,.15);color:#ff6b7a}
+.s-info{background:rgba(56,189,248,.15);color:#38bdf8}
+.s-primary{background:rgba(108,99,255,.18);color:#9a94ff}
+.s-secondary{background:rgba(139,146,179,.18);color:#aeb4d3}
+
+/* avatars / thumbs */
+.avatar{width:38px;height:38px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.thumb{width:42px;height:42px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-size:17px;color:#fff;flex-shrink:0}
+.act-btn{width:32px;height:32px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);color:#aeb4d3;background:transparent;transition:.2s}
+.act-btn:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+.act-btn.del:hover{background:#ff4d5e;border-color:#ff4d5e}
+
+/* flow tiles (dashboard) */
+.flow-tile{display:block;text-align:center;padding:20px 10px;border-radius:14px;background:var(--panel);border:1px solid var(--line);color:#cfd3ea;transition:.3s}
+.flow-tile:hover{color:#fff;border-color:var(--accent);transform:translateY(-3px);background:var(--panel-2)}
+.flow-tile i{display:block;font-size:22px;color:var(--accent);margin-bottom:10px}
+.flow-tile small{display:block;color:var(--muted);margin-bottom:2px}
+
+/* modal */
+.modal-content{background:var(--panel);border:1px solid var(--line);border-radius:14px;color:#e5e8f5}
+.modal-header,.modal-footer{border-color:var(--line)}
+.btn-close{filter:invert(1)}
+
+/* login */
+.login-wrap{min-height:100vh;background:radial-gradient(circle at 20% 20%,rgba(108,99,255,.25),transparent 45%),radial-gradient(circle at 80% 80%,rgba(56,189,248,.18),transparent 45%),var(--page)}
+@media print{.sidebar,.content>.navbar,.no-print,.back-to-top{display:none!important}.content{margin:0!important;width:100%!important}}
+
+/* page background behind the panels */
+.content{background:var(--page)!important}
+body,.container-fluid.position-relative{background:var(--page)}
